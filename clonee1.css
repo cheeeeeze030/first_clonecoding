@@ -1,0 +1,238 @@
+body,html {
+  font-family : 'Roboto';
+  padding : 0;
+  margin : 0;
+  width:100%;
+}
+
+:root {
+  --color-black : rgb(27, 23, 23);
+  --color-white : rgb(252, 251, 236);
+  --color-blue : rgb(14, 163, 255);
+  --color-gray : rgb(110, 107, 107);
+
+  --size-big : 16px;
+  --size-middle : 14px;
+  --size-small : 12px;
+  --size-micro : 10px;
+  
+  --padding : 10px;
+}
+
+.infoAndNext {
+  display:flex;
+  flex-direction : column;
+}
+
+header {
+  background-color : var(--color-black);
+  padding : 8px;
+  display : flex;
+  flex-direction : row;
+  justify-content : space-between;
+}
+
+header .icons {
+  color : var(--color-white);
+}
+
+header .logo span {
+  color : var(--color-white);
+  font-style:bold;
+}
+
+.player {
+  text-align:center;
+  position : sticky;
+  top:0%;
+  background-color: var(--color-black);
+}
+
+.player video {
+  width:100%;
+  height : 100%;
+  max-width : 600px;
+}
+
+.hashtags {
+  display : flex;
+  flex-direction : row;
+  padding : 0;
+  margin : 8px var(--padding);
+}
+
+.hashtags li {
+  list-style : none;
+  font-size : var(--size-small);
+  margin-right: 4px;
+  color : var(--color-blue);
+}
+
+.info .info {
+  display : flex;
+  flex-direction : row;
+  
+}
+
+button,button:focus {
+  outline:none;
+  border:none;
+  cursor:pointer;
+  background-color:white;
+}
+
+.info .info .name {
+  font-size : var(--size-middle);
+  margin-left: var(--padding);
+}
+
+.plusButton {
+  font-size : var(--size-small);
+  margin-right:var(--padding);
+}
+
+.info .views {
+  font-size : var(--size-micro);
+  margin: 4px var(--padding);
+  color : var(--color-gray);
+
+}
+
+.actions {
+  display : flex;
+  flex-direction : row;
+  justify-content : space-around;
+}
+
+.action1, .action2, .action3, .action4, .action5 {
+  display : flex;
+  flex-direction : column;
+  align-items : center;
+  margin :8px 4px;
+}
+
+.actions i {
+  margin-bottom : 6px;
+  color:var(--color-gray);
+}
+
+.actions div div {
+  font-size : var(--size-small);
+}
+
+.channel {
+  display : flex;
+  align-items:center;
+}
+
+.channel img {
+  width : 30px;
+  height : 30px;
+  border-radius:50%;
+}
+
+.myChannel {
+  display : flex;
+  flex-direction : column;
+  padding-left: var(--padding);
+}
+
+.myChannel .name {
+  font-size : var(--size-middle);
+}
+
+.myChannel .subscribers {
+  font-size : var(--size-micro);
+  color : var(--color-gray);
+}
+
+.channelInfo {
+  display: flex;
+  justify-content : space-between;
+}
+
+.subscribe {
+  font-size : var(--size-small);
+  color : red;
+}
+
+.channelInfo {
+  margin : 5px 10px;
+  padding : 7px;
+  border-style:solid;
+  border-right:0.5px;
+  border-left:0.5px;
+  border-color:rgb(210, 210, 210);
+}
+
+.next {
+  margin : 8px var(--padding);
+  color:var(--color-gray);
+  font-size:var(--size-small);
+}
+
+.next1, .next2, .next3 {
+  width:100%;
+  display:flex;
+  flex-direction:row;
+  margin-bottom: 10px;
+
+  .info {
+    flex : 1 1 65%;
+    
+  }
+
+  i {
+    flex : 1 1 5%;
+    
+  }
+
+ .img {
+    flex : 1 1 30%;
+    margin-left : var(--padding);
+    
+  }
+
+  img {
+    width : 100%;
+  }
+  
+}
+
+
+
+.upNext .info {
+  display:flex;
+  flex-direction : column;
+  padding-left : var(--padding);
+  padding-right : var(--padding);
+}
+
+.upNext .info1 {
+  font-size : 13px;
+
+}
+
+.upNext .info2 {
+  margin-top:2px;
+  color:var(--color-gray);
+  font-size : var(--size-small);
+}
+
+.upNext .info3 {
+  margin-top:1px;
+  color:var(--color-gray);
+  font-size : 9px;
+}
+
+.upNext i {
+  font-size : var(--size-small);
+  margin-top : 4px;
+}
+
+@media screen and (min-width:768px) {
+  .infoAndNext {
+    flex-direction : row;
+  }
+
+}
